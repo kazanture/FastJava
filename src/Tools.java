@@ -35,7 +35,9 @@ public class Tools {
             return true;
         }
     }
-
+    BigInteger getNthTriangleNumber(BigInteger n){
+        return n.multiply(n.add(BigInteger.ONE)).divide(BigInteger.valueOf(2));
+    }
     long getDivisorCount(BigInteger n){
         int primeIndex=1;
         BigInteger currentPrime=getNthPrime(primeIndex++);
