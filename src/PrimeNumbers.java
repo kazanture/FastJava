@@ -24,7 +24,8 @@ public class PrimeNumbers {
         } else {
             int n = 1;
             long nthPrime = getNthPrime(n++);
-            while (nthPrime<primeCandidate/2) {
+            long sqrt=(long)Math.sqrt(primeCandidate);
+            while (nthPrime<sqrt) {
                 if (primeCandidate%nthPrime == 0) {
                     return false;
                 }
